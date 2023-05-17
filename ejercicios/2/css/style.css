@@ -1,0 +1,81 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Delicious Handrawn', cursive;
+    min-height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+.encabezado{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(197, 130, 197);
+    
+}
+.menu ul{
+    padding: 0;
+}
+
+main{
+flex-grow: 1;
+}
+.flogo{
+    width: 20vw;
+    height: 20vh;
+    opacity: .9;
+}
+.fotog{
+    width: 400px;
+    height: 500px;
+}
+.gaby{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-self: flex-start;
+    font-size: 2rem;
+
+}
+
+@media screen and (min-width: 1024px){
+    .encabezado{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .gaby{
+        display: flex;
+        /*flex-direction: column;*/
+        align-items: stretch;
+        align-self: center;
+    }
+    .segundo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        order: 1;
+    }
+
+}
+
+
+.pie{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+    padding-right: 50px;
+    background-color:rgb(241, 75, 186);
+    color: rgb(73, 73, 72);
+    font-size: 1.4rem;
+}

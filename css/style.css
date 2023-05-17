@@ -1,0 +1,39 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+}
+.contenedor{
+    background-color: aqua;
+    height: 30vh;
+    display:flex; 
+    flex-direction:column-reverse;
+    flex-wrap:wrap-reverse;
+    flex-flow: row nowrap;
+    justify-content:start;
+    align-items:start;
+    align-content:start;    
+
+    
+}
+.item{
+    /*width: 20%;
+    height: 20%;*/
+    border: 5px solid gold;
+    background-color: rgb(70, 13, 70);
+    color: white; 
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    flex: 1 1 250px;
+    order: 1;
+    align-self: center;
+}
+    .item:nth-child(2){
+flex-grow: 0;
+flex-shrink: 2;
+order: 0;
+align-self:flex-end ;
+    }
+
+
+    
